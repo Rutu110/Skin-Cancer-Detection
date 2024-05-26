@@ -43,37 +43,3 @@ sh
 Dataset
 
 The dataset used for this project can be downloaded from Kaggle. After downloading, place the images in a directory named data/ within the project folder.
-Usage
-Training the Model
-
-To train the model, use the train.py script:
-
-sh
-
-python train.py --dataset data/ --epochs 50 --batch_size 32
-
-Evaluating the Model
-
-To evaluate the model on a test set, use the evaluate.py script:
-
-sh
-
-python evaluate.py --model model.h5 --dataset data/test/
-
-Predicting with the Model
-
-To predict if a skin lesion is benign or malignant, use the predict.py script:
-
-sh
-
-python predict.py --model model.h5 --image sample_image.jpg
-
-Running the Web Application
-
-A simple web application is provided to upload and predict images using a web interface. To run the web app, use the following command:
-
-sh
-
-python app.py
-
-Then, open your browser and go to http://127.0.0.1:5000/.
